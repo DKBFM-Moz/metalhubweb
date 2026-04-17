@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://metalhub.tech/</loc><priority>1.0</priority></url>
+  <url><loc>https://metalhub.tech/thinking.html</loc><priority>0.8</priority></url>
+  <url><loc>https://metalhub.tech/system.html</loc><priority>0.8</priority></url>
+  <url><loc>https://metalhub.tech/situations.html</loc><priority>0.8</priority></url>
+  <url><loc>https://metalhub.tech/privacy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://metalhub.tech/processing.html</loc><priority>0.4</priority></url>
+  <url><loc>https://metalhub.tech/cookies.html</loc><priority>0.4</priority></url>
+</urlset>

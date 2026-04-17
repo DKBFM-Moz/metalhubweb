@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108374716', 'ym');
+
+    ym(108374716, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/108374716" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thinking — инженерное мышление до запуска заказа | MetalHub</title>
+  <meta name="description" content="Как принимаются инженерные решения до запуска ЧПУ-обработки: риски, деформации, биение, посадки, шероховатость и фильтр заказов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Thinking",
+    "description":"Как принимаются инженерные решения до запуска ЧПУ-обработки: риски, деформации, биение, посадки, шероховатость и фильтр заказов.",
+    "author":{"@type":"Organization","name":"MetalHub"},
+    "publisher":{"@type":"Organization","name":"MetalHub","url":"https://metalhub.tech"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://metalhub.tech/thinking.html"}
+  }</script>
+</head>
+<body class="knowledge-page page-thinking">
+  <div class="noise"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap knowledge-shell">
+      <a href="index.html#top" class="logo">MetalHub<span>.tech</span></a>
+      <nav class="utility-nav" aria-label="Дополнительные разделы">
+        <a href="thinking.html">Thinking</a>
+        <a href="system.html">System</a>
+        <a href="situations.html">Situations</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Главная</a>
+      <a href="thinking.html">Thinking</a>
+      <a href="system.html">System</a>
+      <a href="situations.html">Situations</a>
+      <a href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B." class="btn btn-primary">Отправить чертеж</a>
+    </div>
+  </header>
+  <main>
+    <section class="knowledge-hero">
+      <div class="container knowledge-shell">
+        <div class="knowledge-card reveal tilt">
+          <div class="knowledge-kicker">Signal mode</div>
+          <p class="eyebrow">MetalHub</p>
+          <h1>Thinking</h1>
+          <p class="knowledge-lead">Как принимается решение до запуска. Не перечень услуг, а инженерная логика, которая определяет, можно ли сделать деталь стабильно и с гарантируемым результатом.</p>
+          <div class="hero-links">
+            <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+            <a class="btn btn-secondary magnetic" href="index.html#quote">Вернуться на главную</a>
+          </div>
+          <div class="metrics-strip">
+<div class="metric-tile"><strong>Чертёж = гипотеза</strong><span>Сначала проверяем, что произойдёт с металлом в реальном цикле обработки.</span></div>
+<div class="metric-tile"><strong>Риски до запуска</strong><span>Деформация, биение, посадки, шероховатость и поведение материала считаются заранее.</span></div>
+<div class="metric-tile"><strong>Фильтр заказов</strong><span>Берём задачи, где можно гарантировать не только изготовление, но и стабильный результат.</span></div>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:14px">
+      <div class="container knowledge-shell stack">
+        
+<div class="content-grid">
+  <div class="stack">
+    <article class="panel reveal">
+      <h2>Большинство подрядчиков считают металл. Мы сначала считаем риски.</h2>
+      <p>Чертёж — это не инструкция. Это гипотеза, которую нужно проверить на технологичность, повторяемость и управляемость результата. Именно поэтому первое, что мы анализируем, — не размеры, а поведение детали: где её поведёт при обработке, где появится биение, где потеряется посадка, а где геометрия поплывёт уже после термообработки.</p>
+      <p>Если деталь выглядит нормально на бумаге, это ещё не значит, что она технологична. Хорошая металлообработка начинается не со станка, а со способности предсказать, что произойдёт с металлом на каждом этапе маршрута.</p>
+      <div class="bridge-note"><p>В B2B ошибка = простой, неточность = отказ узла, срыв срока = цепная реакция. Поэтому ценится не станок. Ценится мышление до запуска.</p></div>
+    </article>
+    <article class="panel reveal">
+      <h2>Что мы считаем до запуска</h2>
+      <ul class="reading-list">
+        <li>цепочку обработки: токарка → фрезеровка → шлифовка → финиш;</li>
+        <li>деформации по этапам и критические точки съёма припуска;</li>
+        <li>контрольные измерения после ключевых операций;</li>
+        <li>необходимость специнструмента, спецоснастки и промежуточных термоциклов.</li>
+      </ul>
+      <p>Иногда инженерный расчёт занимает больше времени, чем сама обработка. Для сложных деталей это нормально: дешевле вовремя увидеть слабое место, чем потерять геометрию на финише.</p>
+    </article>
+    <article class="panel reveal">
+      <h2>Как принимается решение</h2>
+      <div class="pipeline">
+        <div class="pipeline-step"><span>01</span><h3>Можно ли сделать?</h3><p>Проверяем технологическую реализуемость: габариты, материал, базирование, доступ инструмента, устойчивость цикла.</p></div>
+        <div class="pipeline-step"><span>02</span><h3>Можно ли сделать стабильно?</h3><p>Смотрим на повторяемость: как деталь поведёт себя после черновой, термообработки и чистового прохода.</p></div>
+        <div class="pipeline-step"><span>03</span><h3>Можно ли гарантировать результат?</h3><p>Подтверждаем контрольные точки, измерения, финишный маршрут и только после этого запускаем заказ.</p></div>
+      </div>
+    </article>
+  </div>
+  <div class="stack">
+    <article class="panel reveal">
+      <h2>Риски, которые убивают точность</h2>
+      <ul class="bullet-grid">
+        <li><strong>Деформации.</strong> Тонкие стенки, длинные валы, сложные выборки. Решение: этапная обработка, термоциклы, правильная фиксация.</li>
+        <li><strong>Биение.</strong> Даже 0.05 мм может убить механику вращающегося узла. Рабочий диапазон — ниже сотки.</li>
+        <li><strong>Посадки.</strong> H7/H8 на бумаге не равны реальной сборке: учитываем тепловое расширение, шероховатость и сопряжения.</li>
+        <li><strong>Шероховатость.</strong> Это не красота поверхности, а функциональный параметр. Стандартный диапазон Ra 0.8–6.3, ниже — через отдельный финиш.</li>
+      </ul>
+    </article>
+    <article class="panel reveal">
+      <h2>Диапазон возможностей</h2>
+      <ul class="reading-list">
+        <li>диаметр деталей: от 1–2 мм до 600–1000 мм в типовом диапазоне;</li>
+        <li>крупные изделия — до 6 м на карусельных и портальных конфигурациях;</li>
+        <li>длина — до 4–5 м, более длинные позиции обсуждаются отдельно;</li>
+        <li>точность — до сотых и ниже на ответственных операциях.</li>
+      </ul>
+      <p>Это не маркетинг, а реальные рамки системы. Чем честнее названы границы, тем стабильнее итоговый результат.</p>
+    </article>
+    <article class="panel reveal">
+      <h2>Ограничения — часть доверия</h2>
+      <p>Мы не берём всё подряд. Задачи без чертежа, нестабильные сплавы без теста, сверхгабарит без понятной технологии или заведомо слабая экономика производства — это повод не обещать невозможное, а сразу перестроить решение вместе с заказчиком.</p>
+      <p>Плохой заказ = потеря точности + репутации. В инженерной работе осознанный отказ сильнее, чем случайный успех.</p>
+    </article>
+  </div>
+</div>
+<div class="panel reveal">
+  <h2>Связь с реальностью</h2>
+  <p>То, что описано здесь, — не теория. Это то, что мы видим каждый день: деформация после закалки, биение после обработки, идеальный чертёж, который невозможно собрать без пересмотра логики изготовления. Поэтому хорошая металлообработка — это не про набор станков. Это про способность предсказать поведение металла и выстроить маршрут так, чтобы результат был воспроизводим.</p>
+</div>
+<div class="cross-links reveal">
+  <a class="cross-link-card" href="situations.html"><strong>Situations</strong><span>Реальные сценарии обработки: деформация, биение, посадки, перегрев инструмента и перекос заготовки.</span></a>
+  <a class="cross-link-card" href="system.html"><strong>System</strong><span>Как заказ проходит через анализ, программу ЧПУ, контроль и выпуск без хаоса.</span></a>
+  <a class="cross-link-card" href="index.html#quote"><strong>Main</strong><span>Вернуться на главную и сразу отправить чертёж на расчёт.</span></a>
+</div>
+<div class="bottom-cta reveal">
+  <div>
+    <h2>Если чертёж уже готов — дальше лучше не читать, а запускать расчёт.</h2>
+    <p>Пришлите файлы, материал, объём и желаемые сроки. Дальше система сама покажет, где риски, как считать маршрут и какой цикл нужен под вашу задачу.</p>
+  </div>
+  <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+</div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid knowledge-shell">
+      <div>
+        <a href="index.html#top" class="logo footer-logo">MetalHub<span>.tech</span></a>
+        <p>Инженерная металлообработка ЧПУ для сложных деталей, узлов и производственных задач.</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>info@metalhub.tech</p>
+        <p>zakaz@metallo-chpu.ru</p>
+        <p>+7 (995) 090‑73‑72</p>
+        <p>Санкт-Петербург, ул.Боровая 116</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="thinking.html">Thinking</a>
+        <a href="system.html">System</a>
+        <a href="situations.html">Situations</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108374716', 'ym');
+
+    ym(108374716, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/108374716" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System — система ЧПУ-обработки от чертежа до детали | MetalHub</title>
+  <meta name="description" content="Инженерный pipeline ЧПУ-металлообработки: анализ чертежа, программа, черновая и чистовая обработка, контроль, финиш и выпуск." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"System",
+    "description":"Инженерный pipeline ЧПУ-металлообработки: анализ чертежа, программа, черновая и чистовая обработка, контроль, финиш и выпуск.",
+    "author":{"@type":"Organization","name":"MetalHub"},
+    "publisher":{"@type":"Organization","name":"MetalHub","url":"https://metalhub.tech"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://metalhub.tech/system.html"}
+  }</script>
+</head>
+<body class="knowledge-page page-system">
+  <div class="noise"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap knowledge-shell">
+      <a href="index.html#top" class="logo">MetalHub<span>.tech</span></a>
+      <nav class="utility-nav" aria-label="Дополнительные разделы">
+        <a href="thinking.html">Thinking</a>
+        <a href="system.html">System</a>
+        <a href="situations.html">Situations</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Главная</a>
+      <a href="thinking.html">Thinking</a>
+      <a href="system.html">System</a>
+      <a href="situations.html">Situations</a>
+      <a href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B." class="btn btn-primary">Отправить чертеж</a>
+    </div>
+  </header>
+  <main>
+    <section class="knowledge-hero">
+      <div class="container knowledge-shell">
+        <div class="knowledge-card reveal tilt">
+          <div class="knowledge-kicker">Signal mode</div>
+          <p class="eyebrow">MetalHub</p>
+          <h1>System</h1>
+          <p class="knowledge-lead">Не набор услуг. Система ЧПУ-обработки от чертежа до готовой детали: анализ, программа, обработка, контроль, финиш и выпуск в одной производственной логике.</p>
+          <div class="hero-links">
+            <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+            <a class="btn btn-secondary magnetic" href="index.html#quote">Вернуться на главную</a>
+          </div>
+          <div class="metrics-strip">
+<div class="metric-tile"><strong>Pipeline вместо хаоса</strong><span>Чертёж → анализ → программа → обработка → контроль → финиш → выпуск.</span></div>
+<div class="metric-tile"><strong>Риски снимаются в начале</strong><span>Система не маскирует проблемы на финале, а убирает их ещё до запуска цикла.</span></div>
+<div class="metric-tile"><strong>Одна логика для любого масштаба</strong><span>От опытного образца до повторяемой партии — без потери управляемости процесса.</span></div>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:14px">
+      <div class="container knowledge-shell stack">
+        
+<div class="content-grid">
+  <div class="stack">
+    <article class="panel reveal">
+      <h2>Система начинается не со станка</h2>
+      <p>Деталь не производится в момент резания. Она формируется раньше — в точке, где чертёж, допуски, материал, геометрия и риски собираются в единую производственную логику. Именно поэтому мы смотрим на заказ как на pipeline, где каждый следующий этап не просто выполняет предыдущий, а проверяет его, уточняет и корректирует.</p>
+      <ul class="reading-list">
+        <li>деформация после съёма припуска;</li>
+        <li>биение и вибрация;</li>
+        <li>ошибки базирования и конфликт траекторий;</li>
+        <li>потеря точности на длинных и сложных деталях;</li>
+        <li>расхождение между моделью, программой и фактической геометрией.</li>
+      </ul>
+    </article>
+    <article class="panel reveal">
+      <h2>Этапы системы</h2>
+      <div class="pipeline">
+        <div class="pipeline-step"><span>01 · Анализ чертежа</span><p>Проверяем допуски, посадки, материал, припуски, базирование и соответствие размеров возможностям оборудования.</p></div>
+        <div class="pipeline-step"><span>02 · Программа ЧПУ</span><p>Строим маршрут обработки, CAM-траектории, увязываем операции, моделируем коллизии и режимы резания.</p></div>
+        <div class="pipeline-step"><span>03 · Черновая обработка</span><p>Снимаем основной объём материала и наблюдаем фактическое поведение заготовки под нагрузкой.</p></div>
+        <div class="pipeline-step"><span>04 · Промежуточный контроль</span><p>Измеряем после критичных переходов и корректируем не отчёт, а следующий шаг обработки.</p></div>
+        <div class="pipeline-step"><span>05 · Чистовая и финиш</span><p>Доводим геометрию, шероховатость и функциональное состояние, подключаем шлифовку и термооперации по задаче.</p></div>
+        <div class="pipeline-step"><span>06 · Выпуск</span><p>Финальный контроль, упаковка, логистика и передача детали заказчику в единичном или серийном формате.</p></div>
+      </div>
+    </article>
+  </div>
+  <div class="stack">
+    <article class="panel reveal">
+      <h2>Каждое измерение влияет на решение</h2>
+      <p>После ключевых операций деталь не идёт дальше по умолчанию. Базовые размеры, соосность, биение, промежуточная геометрия и поведение материала проверяются как часть цикла управления. Если система видит отклонение, корректируется не финальный отчёт, а сам маршрут.</p>
+      <div class="bridge-note"><p>Измерение здесь — не формальность. Это обратная связь, без которой невозможно предсказуемое качество.</p></div>
+    </article>
+    <article class="panel reveal">
+      <h2>Почему это система, а не просто обработка</h2>
+      <ul class="reading-list">
+        <li><strong>Обратная связь на каждом этапе.</strong> Каждое действие проверяет предыдущее.</li>
+        <li><strong>Риски снимаются заранее.</strong> Деформация, биение, конфликт траекторий и проблемы базирования должны быть обнаружены до выпуска детали.</li>
+        <li><strong>Один pipeline для разных масштабов.</strong> Та же инженерная логика работает и для прототипа, и для повторяемой партии.</li>
+      </ul>
+    </article>
+    <article class="panel reveal">
+      <h2>Где система усиливает доверие</h2>
+      <p>Не каждая задача должна быть принята любой ценой. Если геометрия, материал, габариты или экономика производства делают результат нестабильным, это лучше определить на входе. Поэтому отдельного согласования требуют сверхгабаритные детали, нестандартные сплавы, длинномерные изделия, специальные покрытия для штучных заказов и нестандартная подготовка оснастки.</p>
+      <p>Такой подход отличает инженерную систему от подрядчика, который говорит да на всё подряд.</p>
+    </article>
+  </div>
+</div>
+<div class="panel reveal">
+  <h2>Где system проявляется на практике</h2>
+  <p>В реальном производстве именно система определяет, будет ли деталь стабильной после снятия припуска, уйдёт ли вал в биение, сохранится ли геометрия после термообработки и насколько повторяемым окажется результат в партии. ЧПУ-обработка сильна не количеством операций, а связью между ними.</p>
+</div>
+<div class="cross-links reveal">
+  <a class="cross-link-card" href="thinking.html"><strong>Thinking</strong><span>Как принимаются инженерные решения до запуска в работу и по каким критериям фильтруется заказ.</span></a>
+  <a class="cross-link-card" href="situations.html"><strong>Situations</strong><span>Как система ведёт себя в реальных сценариях: деформация, биение, посадки, износ инструмента.</span></a>
+  <a class="cross-link-card" href="index.html#quote"><strong>Main</strong><span>Вернуться на главную и отправить чертёж без лишних шагов.</span></a>
+</div>
+<div class="bottom-cta reveal">
+  <div>
+    <h2>Если задача уже описана, системе нужен не длинный разговор, а входные данные.</h2>
+    <p>Отправьте чертёж, материал, объём и сроки. Дальше pipeline сам покажет, где снимаются риски и как довести деталь до стабильного результата.</p>
+  </div>
+  <a class="btn btn-primary magnetic" href="mailto:zakaz@metallo-chpu.ru?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D0%BC%D0%B5%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8&body=%D0%9F%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%B8%D1%82%D0%B5%20%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83%3A%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%2C%20%D1%81%D1%80%D0%BE%D0%BA%D0%B8%2C%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B.">Отправить чертеж</a>
+</div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid knowledge-shell">
+      <div>
+        <a href="index.html#top" class="logo footer-logo">MetalHub<span>.tech</span></a>
+        <p>Инженерная металлообработка ЧПУ для сложных деталей, узлов и производственных задач.</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>info@metalhub.tech</p>
+        <p>zakaz@metallo-chpu.ru</p>
+        <p>+7 (995) 090‑73‑72</p>
+        <p>Санкт-Петербург, ул.Боровая 116</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="thinking.html">Thinking</a>
+        <a href="system.html">System</a>
+        <a href="situations.html">Situations</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

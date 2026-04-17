@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Металлообработка ЧПУ в СПб — видео о производстве | MetalHub</title>
+  <meta name="description" content="Механическая обработка металла на ЧПУ в Санкт-Петербурге. Токарные и фрезерные работы, обработка деталей по чертежам, серийное производство. MetalHub — изготовление деталей из стали, нержавейки, алюминия, титана.">
+  <meta name="keywords" content="металлообработка ЧПУ СПб, токарные работы, фрезерные работы, изготовление деталей по чертежам, механическая обработка металла, обработка металла на заказ, карусельная обработка, портальная обработка">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Металлообработка ЧПУ — MetalHub Санкт-Петербург">
+  <meta property="og:description" content="Полный цикл механической обработки металла: токарные, фрезерные работы, термообработка. Работаем с серийными партиями по чертежам заказчика.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metalhub.tech/video">
+
+  <!-- Structured Data для нейросетей и поисковиков -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "MetalHub — металлообработка и ЧПУ в Санкт-Петербурге",
+    "description": "Производственные возможности цеха MetalHub: токарная и фрезерная обработка на ЧПУ, карусельные и портальные станки, термообработка, работа с деталями диаметром до 6 метров.",
+    "thumbnailUrl": "https://metalhub.tech/assets/img/many_cnc_machined_parts_crop.webp",
+    "uploadDate": "2026-04-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MetalHub",
+      "url": "https://metalhub.tech",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-995-090-73-72",
+        "email": "zakaz@metallo-chpu.ru",
+        "contactType": "sales"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Санкт-Петербург",
+        "streetAddress": "ул. Боровая, 116",
+        "addressCountry": "RU"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MetalHub",
+    "description": "Механическая обработка металлов и сплавов на станках с ЧПУ. Токарные и фрезерные работы, карусельная и портальная обработка, термообработка. Серийное и мелкосерийное производство по чертежам заказчика.",
+    "url": "https://metalhub.tech",
+    "telephone": "+7-995-090-73-72",
+    "email": "zakaz@metallo-chpu.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Боровая, 116",
+      "addressLocality": "Санкт-Петербург",
+      "addressCountry": "RU"
+    },
+    "areaServed": "RU",
+    "serviceType": [
+      "Токарная обработка ЧПУ",
+      "Фрезерная обработка ЧПУ",
+      "Карусельная обработка",
+      "Портальная обработка",
+      "Термообработка металла",
+      "Изготовление деталей по чертежам",
+      "Серийное производство деталей"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #0a0c10;
+      --bg-soft:  #10141a;
+      --bg-card:  #13171f;
+      --text:     #f5f7fb;
+      --muted:    #b2bccb;
+      --accent:   #1783ff;
+      --border:   rgba(255,255,255,.07);
+      --radius:   20px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(20px, 5vw, 80px);
+      height: 64px;
+      background: rgba(10,12,16,.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo { font-size: 1.35rem; font-weight: 800; letter-spacing: -.04em; }
+    .logo span { color: var(--accent); }
+
+    .nav-cta {
+      padding: 8px 20px; border-radius: 999px;
+      background: linear-gradient(135deg, #2e96ff, #176ee6);
+      color: #fff; font-size: .88rem; font-weight: 600;
+      box-shadow: 0 6px 20px rgba(23,131,255,.3);
+      transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: .88; }
+
+    /* ─── HERO ─── */
+    .hero {
+      padding: clamp(60px, 8vw, 110px) clamp(20px, 5vw, 80px) clamp(40px, 5vw, 70px);
+      max-width: 860px;
+    }
+
+    .eyebrow {
+      display: inline-block; margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: .18em;
+      color: #86baff; font-size: .75rem; font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      line-height: 1.0; letter-spacing: -.05em;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      color: var(--muted); font-size: 1.05rem;
+      max-width: 580px; margin-bottom: 32px;
+    }
+
+    /* ─── VIDEO BLOCK ─── */
+    .video-section {
+      padding: 0 clamp(20px, 5vw, 80px) clamp(60px, 6vw, 90px);
+    }
+
+    .video-wrapper {
+      position: relative; width: 100%; max-width: 960px;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-soft);
+      box-shadow: 0 32px 80px rgba(0,0,0,.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* placeholder если видео ещё не загружено */
+    .video-placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 16px;
+      background: linear-gradient(135deg, #0d1117, #10161f);
+    }
+    .video-placeholder svg { opacity: .35; }
+    .video-placeholder p { color: var(--muted); font-size: .9rem; }
+
+    /* ─── CAPABILITIES GRID ─── */
+    .section {
+      padding: clamp(50px, 6vw, 90px) clamp(20px, 5vw, 80px);
+    }
+
+    .section-label {
+      text-transform: uppercase; letter-spacing: .18em;
+      color: #86baff; font-size: .75rem; font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      letter-spacing: -.04em; margin-bottom: 40px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      transition: border-color .25s;
+    }
+    .card:hover { border-color: rgba(23,131,255,.35); }
+
+    .card-icon {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(23,131,255,.12);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+      font-size: 1.2rem;
+    }
+
+    .card h3 {
+      font-size: 1rem; font-weight: 700;
+      margin-bottom: 8px; letter-spacing: -.02em;
+    }
+
+    .card p { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+
+    /* ─── SPECS TABLE ─── */
+    .specs {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      max-width: 760px;
+    }
+
+    .spec-row {
+      display: grid; grid-template-columns: 1fr 1fr;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .spec-row:last-child { border-bottom: none; }
+
+    .spec-label { color: var(--muted); font-size: .9rem; }
+    .spec-value { font-weight: 600; font-size: .9rem; color: var(--accent); }
+
+    /* ─── MATERIALS ─── */
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+
+    .tag {
+      padding: 8px 16px; border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      font-size: .88rem; color: #dce6f7;
+      transition: border-color .2s, background .2s;
+    }
+    .tag:hover { border-color: rgba(23,131,255,.4); background: rgba(23,131,255,.07); }
+
+    /* ─── INDUSTRIES ─── */
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px; margin-top: 24px;
+    }
+
+    .industry-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 20px;
+      font-size: .9rem; font-weight: 600;
+      color: #dce6f7;
+    }
+
+    /* ─── SEO TEXT BLOCK ─── */
+    .seo-block {
+      padding: clamp(40px, 5vw, 70px) clamp(20px, 5vw, 80px);
+      border-top: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.015), transparent);
+    }
+
+    .seo-block h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -.03em; }
+    .seo-block h3 { font-size: 1.1rem; margin: 28px 0 10px; color: #d4e0f0; }
+
+    .seo-block p {
+      color: var(--muted); font-size: .93rem;
+      line-height: 1.8; max-width: 820px;
+      margin-bottom: 14px;
+    }
+
+    .seo-block ul {
+      color: var(--muted); font-size: .93rem;
+      padding-left: 20px; line-height: 2;
+      max-width: 820px;
+    }
+
+    /* ─── CTA ─── */
+    .cta-block {
+      padding: clamp(50px, 6vw, 90px) clamp(20px, 5vw, 80px);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-block h2 { font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -.04em; margin: 0; }
+    .cta-block p { color: var(--muted); font-size: .9rem; margin-top: 6px; }
+
+    .btn-primary {
+      padding: 14px 32px; border-radius: 999px;
+      background: linear-gradient(135deg, #2e96ff, #176ee6);
+      color: #fff; font-weight: 700; font-size: .95rem;
+      box-shadow: 0 10px 28px rgba(23,131,255,.35);
+      white-space: nowrap;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(23,131,255,.45); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 28px clamp(20px, 5vw, 80px);
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+      font-size: .83rem; color: var(--muted);
+    }
+
+    footer a { color: #86baff; }
+    footer a:hover { color: #fff; }
+
+    .footer-contacts { display: flex; flex-wrap: wrap; gap: 20px; }
+
+    @media (max-width: 640px) {
+      .spec-row { grid-template-columns: 1fr; gap: 4px; }
+      .cta-block { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://metalhub.tech" class="logo">MetalHub<span>.tech</span></a>
+  <a href="mailto:zakaz@metallo-chpu.ru?subject=Запрос на расчет металлообработки" class="nav-cta">Получить расчет</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="eyebrow">Металлообработка ЧПУ · Санкт-Петербург</span>
+  <h1>Производство деталей по чертежам</h1>
+  <p>Токарная и фрезерная обработка, карусельные и портальные станки, термообработка. Серийное и мелкосерийное производство из стали, нержавейки, алюминия, титана и других материалов.</p>
+</div>
+
+<!-- VIDEO -->
+<div class="video-section">
+  <div class="video-wrapper" id="videoWrapper">
+    <!-- СЮДА ВСТАВИТЬ embed-ссылку из NotebookLM после генерации видео -->
+    <!-- Пример: <iframe src="https://www.youtube.com/embed/XXXXXXXXX" allowfullscreen></iframe> -->
+    <div class="video-placeholder">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/>
+        <polygon points="10,8 16,12 10,16" fill="#fff" stroke="none"/>
+      </svg>
+      <p>Видео о производстве MetalHub</p>
+    </div>
+  </div>
+</div>
+
+<!-- CAPABILITIES -->
+<div class="section">
+  <p class="section-label">Возможности производства</p>
+  <h2>Что закрываем по задаче</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">⚙️</div>
+      <h3>Токарная обработка ЧПУ</h3>
+      <p>Цилиндрические, конические и фасонные поверхности. Диаметры от 1 мм до 1000 мм в стандартном режиме.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔧</div>
+      <h3>Фрезерная обработка ЧПУ</h3>
+      <p>Плоскости, пазы, сложные контуры. 3-, 4- и 5-координатная обработка на обрабатывающих центрах.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏭</div>
+      <h3>Карусельная обработка</h3>
+      <p>Крупногабаритные тела вращения диаметром до 6 метров. Тяжёлые детали для машиностроения и энергетики.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📐</div>
+      <h3>Портальная обработка</h3>
+      <p>Детали нестандартной конфигурации, которые не подходят для карусельного станка. Длинномерные и плоские заготовки.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔥</div>
+      <h3>Термическая обработка</h3>
+      <p>Объёмная закалка, ТВЧ, цементация, азотирование. Полный цикл упрочнения в рамках одного исполнителя.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Инженерная подготовка</h3>
+      <p>Разработка КД, 3D-моделирование, написание управляющих программ, изготовление спецоснастки.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SPECS -->
+<div class="section" style="padding-top:0">
+  <p class="section-label">Технические параметры</p>
+  <h2>Точность и габариты</h2>
+  <div class="specs">
+    <div class="spec-row">
+      <span class="spec-label">Диаметры (стандарт)</span>
+      <span class="spec-value">1 — 1000 мм</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Диаметры (крупный габарит)</span>
+      <span class="spec-value">до 6 000 мм</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Максимальная длина детали</span>
+      <span class="spec-value">до 5 000 мм</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Точность токарно-фрезерной группы</span>
+      <span class="spec-value">0,003 — 0,005 мкм</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Квалитет точности</span>
+      <span class="spec-value">IT6 — IT7</span>
+    </div>
+    <div class="spec-row">
+      <span class="spec-label">Шероховатость поверхности (из-под резца)</span>
+      <span class="spec-value">Ra 0,2 — 0,3 мкм</span>
+    </div>
+  </div>
+</div>
+
+<!-- MATERIALS -->
+<div class="section" style="padding-top:0">
+  <p class="section-label">Материалы</p>
+  <h2>Обрабатываемые материалы и сплавы</h2>
+  <div class="tags">
+    <span class="tag">Конструкционные стали</span>
+    <span class="tag">Легированные стали</span>
+    <span class="tag">Нержавеющие стали</span>
+    <span class="tag">Алюминиевые сплавы</span>
+    <span class="tag">Латунь</span>
+    <span class="tag">Бронза</span>
+    <span class="tag">Медь</span>
+    <span class="tag">Титан</span>
+    <span class="tag">Жаропрочные сплавы</span>
+    <span class="tag">Инструментальные стали</span>
+    <span class="tag">Спецсплавы</span>
+    <span class="tag">Полимеры</span>
+    <span class="tag">Текстолит</span>
+  </div>
+</div>
+
+<!-- INDUSTRIES -->
+<div class="section" style="padding-top:0">
+  <p class="section-label">Отрасли</p>
+  <h2>Для каких задач подходим</h2>
+  <div class="industries-grid">
+    <div class="industry-card">Машиностроение</div>
+    <div class="industry-card">Нефтегазовое оборудование</div>
+    <div class="industry-card">Энергетика</div>
+    <div class="industry-card">Судостроение</div>
+    <div class="industry-card">Авиастроение</div>
+    <div class="industry-card">Медицинское оборудование</div>
+    <div class="industry-card">Роботизация</div>
+    <div class="industry-card">Автостроение</div>
+  </div>
+</div>
+
+<!-- SEO TEXT BLOCK -->
+<div class="seo-block">
+  <h2>Металлообработка ЧПУ в Санкт-Петербурге — MetalHub</h2>
+
+  <p>MetalHub выполняет механическую обработку металла на заказ по чертежам и техническим требованиям заказчика. Производство расположено в Санкт-Петербурге и работает с серийными и мелкосерийными партиями промышленного масштаба.</p>
+
+  <h3>Токарная и фрезерная обработка на ЧПУ</h3>
+  <p>Токарные работы на станках с ЧПУ — изготовление деталей тел вращения: валы, втулки, фланцы, кольца, штоки и другие цилиндрические и конические элементы. Фрезерная обработка с ЧПУ — плоскостные и объёмные детали, корпуса, плиты, кронштейны, сложные контурные поверхности, в том числе 5-координатная обработка за один установ.</p>
+
+  <h3>Крупногабаритная обработка</h3>
+  <p>Карусельные станки обеспечивают обработку тел вращения диаметром до 6 метров — крупные фланцы, кольца, диски, барабаны. Портальные станки применяются для деталей нестандартной конфигурации, длинномерных и плоских заготовок. Максимальная длина обрабатываемой детали — до 5 метров.</p>
+
+  <h3>Термическая обработка металла</h3>
+  <p>В рамках производственного цикла выполняется объёмная закалка, поверхностная закалка ТВЧ, цементация и азотирование. Это позволяет получить изделие с требуемыми механическими свойствами без передачи заказа на сторону.</p>
+
+  <h3>Материалы</h3>
+  <p>Обрабатываем конструкционные и легированные стали, нержавеющие стали, алюминиевые сплавы, латунь, бронзу, медь, титан, жаропрочные и специальные сплавы. Также работаем с полимерами и текстолитом.</p>
+
+  <h3>Серийное производство деталей по чертежам</h3>
+  <p>Принимаем заказы на серийное и мелкосерийное производство деталей по чертежам заказчика. При необходимости выполняем разработку конструкторской документации, 3D-моделирование и написание управляющих программ для ЧПУ. Для крупных объёмов подключается партнёрская производственная сеть.</p>
+
+  <h3>Как разместить заказ на металлообработку</h3>
+  <ul>
+    <li>Отправьте чертежи или техническое задание на <a href="mailto:zakaz@metallo-chpu.ru" style="color:#86baff">zakaz@metallo-chpu.ru</a></li>
+    <li>Укажите материал, объём партии и желаемые сроки</li>
+    <li>Получите расчёт стоимости и сроков изготовления</li>
+    <li>После согласования — запуск в производство</li>
+  </ul>
+
+  <p style="margin-top:20px">Адрес производства: Санкт-Петербург, ул. Боровая, 116. Телефон: <a href="tel:+79950907372" style="color:#86baff">+7 (995) 090‑73‑72</a>.</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-block">
+  <div>
+    <h2>Отправьте чертежи — получите расчёт</h2>
+    <p>Стоимость и сроки согласовываются по чертежам заказчика индивидуально.</p>
+  </div>
+  <a href="mailto:zakaz@metallo-chpu.ru?subject=Запрос на расчет металлообработки&body=Прикрепите чертежи и опишите задачу: материал, объём, сроки, контакты." class="btn-primary">Отправить чертежи</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a href="https://metalhub.tech" class="logo" style="font-size:1.1rem">MetalHub<span style="color:var(--accent)">.tech</span></a>
+  <div class="footer-contacts">
+    <a href="https://metalhub.tech">metalhub.tech</a>
+    <a href="mailto:zakaz@metallo-chpu.ru">zakaz@metallo-chpu.ru</a>
+    <a href="tel:+79950907372">+7 (995) 090‑73‑72</a>
+    <span>СПб, ул. Боровая 116</span>
+  </div>
+</footer>
+
+</body>
+</html>
